@@ -1,0 +1,196 @@
+/*varibles for easy changing of my sites colors/looks*/
+:root {
+	--mainBackground-color: #a5a2a2;
+	--mainBackground-color-hover: #a3a1a1;
+	--mainBackground-color-focus: #c2bdbd;
+	--secoundBackground-color: #8a8787;
+	--navBackground-color: #555555;
+
+	--border-background-color: #aaaaaa;
+	--border-Rad: 10px;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/*nav styles*/
+nav {
+	background-color: var(--navBackground-color);
+}
+nav ul {
+	display: flex;
+	gap: 10px;
+	justify-content: end;
+	padding: 20px;
+	list-style: none;
+}
+nav ul li a,
+fieldset button {
+	text-decoration: none;
+	color: black;
+	padding: 10px 20px;
+	border: 2px var(--navBackground-color) solid;
+	border-radius: var(--border-Rad);
+	background-color: var(--mainBackground-color);
+}
+nav ul li a:hover,
+fieldset button:hover {
+	background-color: var(--mainBackground-color-focus);
+}
+nav ul li a:focus,
+fieldset button:focus {
+	background-color: var(--mainBackground-color-focus);
+}
+/*nav styles END*/
+/*header h1 styles */
+header {
+	background-color: var(--mainBackground-color);
+	padding-bottom: 20px;
+}
+header h1 {
+	margin-top: 20px;
+	margin-bottom: auto;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 50px;
+}
+/*header h1 styles end */
+/*main styles*/
+.mainDiv:nth-child(even) {
+	background-color: var(--mainBackground-color);
+}
+.mainDiv:nth-child(odd) {
+	background-color: var(--secoundBackground-color);
+}
+.mainDiv h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+.mainDiv {
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 30px;
+}
+.sandwich {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 70px;
+	margin-bottom: 50px;
+	justify-content: center;
+}
+.sandwich img {
+	width: 400px;
+	height: 300px;
+	object-fit: cover;
+}
+.sandwich h3 {
+	margin-top: 5px;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 30px;
+}
+.sandwich p {
+	margin-top: 10px;
+	width: 400px;
+}
+#ul {
+	list-style: none;
+}
+
+#ul li {
+	margin-top: 10px;
+}
+/*main styles end*/
+/*footer*/
+footer {
+	padding: 30px 40px;
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+	background-color: var(--mainBackground-color);
+	flex-wrap: wrap;
+}
+footer div ul {
+	list-style: none;
+}
+footer div ul a {
+	color: black;
+}
+footer div ul a:hover {
+	color: rgb(88, 65, 65);
+}
+footer div ul a:focus {
+	color: rgb(99, 68, 68);
+}
+/*footer end*/
+/*contact page*/
+fieldset {
+	padding-bottom: 200px;
+	border: none;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+fieldset ul {
+	width: 300px;
+	list-style: none;
+}
+fieldset ul li {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+#textArea {
+	display: block;
+}
+
+fieldset label {
+	position: relative;
+	margin-right: 30px;
+}
+fieldset textarea {
+	margin-top: 10px;
+	width: 100%;
+	height: 100px;
+}
+fieldset button {
+	padding: 10px 50px;
+}
+fieldset button:hover {
+	cursor: pointer;
+}
+fieldset ul li p {
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 200px;
+	color: #e5b3e1;
+}
+#last {
+	margin-top: 0px;
+}
+.format {
+	margin-left: 135px;
+	margin-top: 40px;
+}
+fieldset input,
+textarea {
+	border: var(--navBackground-color) 2px solid;
+	background-color: var(--mainBackground-color-hover);
+	padding: 3px;
+	outline: none;
+	transition: 0.5s;
+}
+fieldset input:focus,
+textarea:focus {
+	background-color: var(--mainBackground-color-focus);
+	border-color: var(--navBackground-color);
+}
+
+/*contact page end*/

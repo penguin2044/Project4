@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="contact page of In bread" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact</title>
+		<link rel="stylesheet" type="text/css" href="theCSS.css" />
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<header id="home">
+			<nav>
+				<ul>
+					<li><a href="index.html#home">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<h1>In Bread</h1>
+		</header>
+		<main>
+			<div class="mainDiv">
+				<h2>Contact</h2>
+				<form action="index.html" method="get" id="contactForm">
+					<fieldset>
+						<ul>
+							<li>
+								<label for="firstName">First name</label
+								><input type="text" name="firstName" id="firstName" />
+								<p class="error">Required field</p>
+							</li>
+							<li>
+								<label for="lastName">Last Name</label
+								><input type="text" name="lastName" id="lastName" />
+								<p class="error">Required field</p>
+							</li>
+							<li>
+								<label for="email">Email</label
+								><input type="email" name="email" id="email" />
+								<p class="error">Required field</p>
+								<p class="format">incorrect email format</p>
+							</li>
+							<li>
+								<label for="PhoneNum">Phone Number</label
+								><input type="tel" name="PhoneNum" id="PhoneNum" />
+								<p class="error">Required field</p>
+								<p class="format">incorrect phone format</p>
+							</li>
+
+							<li id="textArea">
+								<label for="message">Message</label><br /><textarea
+									name="message"
+									id="message"
+								></textarea>
+								<p id="last" class="error">Required field</p>
+							</li>
+							<li>
+								<button type="reset" id="reset">Reset</button>
+								<button type="submit" id="submit">Submit</button>
+							</li>
+						</ul>
+					</fieldset>
+				</form>
+			</div>
+		</main>
+		<footer>
+			<div id="Contact Info">
+				<h2>Contact Info</h2>
+				<p>In Bread Sandwich Shop</p>
+				<p>123 Crumb Street, Toastville, NY 10001</p>
+				<p>(555) 123-4567</p>
+				<p>hello@inbread.com</p>
+			</div>
+			<div>
+				<h2>Links</h2>
+				<ul>
+					<li><a href="index.html#home">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Hours</h2>
+				<p>Mon-Fri: 10 AM - 8 PM</p>
+				<p>Sat-Sun: 11 AM - 6 PM</p>
+				<p>(Yes, we're closed on holidays.)</p>
+			</div>
+		</footer>
+	</body>
+</html>
